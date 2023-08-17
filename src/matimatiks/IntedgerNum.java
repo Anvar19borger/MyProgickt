@@ -2,81 +2,71 @@ package matimatiks;
 
 public class IntedgerNum {
     public static void main(String[] args) {
-        System.out.println("Mathematics");
+        String name;
+        name = "Andreas";
+        int age;
+        age = 38;
+        double height;
+        height = 1.87;
+        String line = "Menja sawut " + name + " , mne " + age + "  let, moi rost - "
+                + height;
 
-        int x = 20;
-        int y = 10;
-
-        int z = x - y; // = - eto preswoenie, a ne "rawenstwo", kak bilo w schkole
-
-        System.out.println(" z = x - y : " + z); // w kowichkach - eto tekstovoe oformlenie, soprowogdenie
-
-        z = x * y;
-
-        System.out.println(" z = x * y : " + z);
-
-        int a = 57;
-        int b = 10;
-
-        // delenie celich chisel
-        int c = a / b;
-
-        System.out.println("Chastnoe  " + a + " / " + b + " = " + c );// celochislinnoe delenie
-
-        int d = a % b;
-
-        System.out.println("Chastnoe  " + a + " % " + b + " = " + d );// celochislinnoe delinie s ostatkom
-
-        int n = 60 % 12;// ostatok ot delenija
-        System.out.println("60 % 12 = " + n);
+        System.out.println(line);
 
 
-        System.out.println("========= weschestwinnie chisla =========");
+      System.out.println();
 
-        double f = 10.0D;
-        double g = 9.8;
-        double e = f / g;
-        System.out.println("Resultat " + f + " / " + g + " = " + e);
+        char a = 'A';// peremennaja budit sodergat angl. bukvu A
+        char b = 0x41; // peremennaja budit sodergat angl. bukwu A ,
+        char c = 65;
 
-        //formotiriwannii wiwod
-        System.out.printf("Resultat: %.2f ", e);
+        System.out.println(a + " b:" + b + " c: " + c);
 
-        //preobrosowanie tipov
-        int num1 = 10;
-        int num2 = 3;
-
-        double d1 = (double) num1 /(double) num2;// preobrosowanie int w tip double
+        String name3;
+        name3 = "Andreas1";
         System.out.println();
-        System.out.println(d1);
+        System.out.println(name3);
+        System.out.println();
 
-        int num3 = (int) d1;// prreobrosowanie tipa
-        System.out.println(num3);
-
-        System.out.println("======= metodi klassa Math. ========");
-
-        double r = 10;
-        double length = 2 * Math.PI * r;// dlina okrugnasti
-        System.out.println("Legth of circle is : "+ length);
-
-        double area = Math.PI * Math.pow(r, 2); // PI * r w kwodrate - ploschad kruga
-        System.out.println(" Aria of circle is :" + area);
-
-        System.out.printf("=== inkriment i dekrement");
-        int i = 0;
-
-
-        ++i;// uwelichenie na 1
-
-        System.out.printf(" i = " + i);
-
-        i++;// uwelichenie na 1
-
-        System.out.printf(" i = " + i);
+ String str1;
+ str1 ="Andreas";
+ String str2;
+ str2 ="Borger";
+ String str3;
+ str3 ="Ich";
+ String str4;
+ str4 ="bin";
+ String str5;
+ str5 ="AIT";
+ String str6;
+ str6 = "Schuler!";
+ System.out.println(str1 +" " + str2 +" ,"+ str3 +" " + str4 + " " + str5 + " " + str6);
 
 
+ String str = " Java";
+ System.out.println(str);
+ int length = name.length();
+ System.out.println(name + " length: " + length);
 
-        // += ,-=,*=, /= - prowesti eksperimenti, chto poluchitsja . Prochitat w stotjach.
 
+  str6 = str1.concat(str);
+ System.out.println(str6);
+ str1 = str5 + " " + str3;
+ System.out.println(str1);
+
+ str6 = String.join( " ", str1, str2, str4);
+ System.out.println(str6);
+
+ String strNumbers ="01234567";
+ System.out.println("length " + strNumbers.length());
+ char firstChar = strNumbers.charAt(0);
+ System.out.println("firstChar " + firstChar);
+ char lastChar = strNumbers.charAt(strNumbers.length() -1);
+ System.out.println("lastChar " + lastChar);
+
+ String substring =strNumbers.substring(2);
+ System.out.println(strNumbers);
+ System.out.println("substring " + substring);
 
 
 
